@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppLembretesTarefas</string>
+    <string name="label_title">Título</string>
+    <string name="label_date">Data</string>
+    <string name="label_hour">Horário</string>
+    <string name="label_new_task">Criar Tarefa</string>
+    <string name="label_cancel">Cancelar</string>
+    <string name="label_tasks">Tarefas</string>
+    <string name="label_floatbtn_task">Nova Tarefa</string>
+    <string name="label_popup_edit">Editar</string>
+    <string name="label_popup_delete">Deletar</string>
+    <string name="label_no_task_text">Olá! você não possui\n nenhuma tarefa</string>
+</resources>
