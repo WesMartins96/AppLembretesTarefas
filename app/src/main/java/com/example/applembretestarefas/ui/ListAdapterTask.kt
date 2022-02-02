@@ -32,6 +32,7 @@ class ListAdapterTask : ListAdapter<Task, ListAdapterTask.TaskViewHolder>(DiffCa
     inner class TaskViewHolder(
         private val binding: ItemTaskBinding
     ) : RecyclerView.ViewHolder(binding.root) {
+
         fun bind(item: Task) {
             binding.tvTitle.text = item.title
             binding.tvDate.text = "${item.date} ${item.hour}"
@@ -53,12 +54,9 @@ class ListAdapterTask : ListAdapter<Task, ListAdapterTask.TaskViewHolder>(DiffCa
             }
 
             popupMenu.show()
-
         }
-
     }
 }
-
 class DiffCallback : DiffUtil.ItemCallback<Task>(){
     override fun areItemsTheSame(oldItem: Task, newItem: Task) = oldItem == newItem
     override fun areContentsTheSame(oldItem: Task, newItem: Task) = oldItem.id == newItem.id
